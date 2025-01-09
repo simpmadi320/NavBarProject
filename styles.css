@@ -1,24 +1,32 @@
+:root{
+    --bck: 90%
+}
 .container{
     display:flex;
     justify-content: space-between;
-    background-color: lightblue;
-    height: 100%;
+    background-color:  hsl(0, 0%, var(--bck));
     margin: 0px;
     padding: 0px;
 }
 
 ul {
     display:flex;
-    height: 100%;
     align-items: stretch;
+
+  
 }
 
 a {
+    
+
     color: black;
     text-decoration: none;
-    padding: 5px;
-    height: 100%;
-    background-color:  lightyellow;
+    background-color:  hsl(0, 0%, var(--bck));
+    padding: 16px;
+}
+
+a:hover{
+    background-color:  hsl(0, 0%, calc(var(--bck) - 20%));
 }
 
 li {
@@ -27,9 +35,11 @@ li {
 }
 
 body{
-    background-color: pink;
+
 }
 
 #nameID {
-    padding: 20px;
+    padding-top: 15px;
+    padding-left: 15px;
+    font-weight: bold;
 }
